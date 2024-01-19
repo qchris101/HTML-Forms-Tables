@@ -6,7 +6,81 @@
     <title>Lets Practice Forms</title>
 </head>
 <body>
+
+
+    <nav><a href="HTML-Tables.html">Tables HTML</a></nav>
     <h1>Forms Demo</h1>
-    <form action=""></form><!-- action attribute specifies where the form data should be sent.-->
+    <form action="/tacos"><!-- action attribute specifies where the form data should be sent-->
+        <p>
+            <label for="username">Enter a Username:</label>
+            <input id="username" type="text" placeholder="username" name="username">
+        </p>
+        <p>
+            <label for="password">Enter your Password:</label>
+            <input id ="password" type="password" placeholder="password" name="password">
+        </p>
+        <button>Submit</button>
+    </form>
+    <hr>
+
+
+
+
+    <h3>Hijacking Search Engines</h3>
+    <form action="https://google.com/search">
+        <input type="text" name="q">
+        <button>Search Google</button>
+    </form>
+    <form action="https://reddit.com/search">
+        <input type="text" name="q">
+        <button>Search Reddit</button>
+    </form>
+    <form action="https://youtube.com/results">
+        <input type="text" name="search_query">
+        <button>Search Youtube</button>
+    </form>
+
+
+    <hr>
+
+    <h2>More Inputs</h2>
+
+
+    <form>
+        <input type="checkbox" name="agree_tos" id="agree">
+        <label for="agree">I agree to the TOS</label>
+        <hr>
+        <p>
+                    <label for="S">Small</label>
+                    <input type="radio" name="size" id="S" value="S">
+                    <br>
+                    <label for="M">Medium</label>
+                    <input type="radio" name="size" id="M" value="M">
+                    <br>
+                    <label for="L">Large</label>
+                    <input type="radio" name="size" id="L" value="L">
+                    <br> 
+                    <label for="XL">Extra-Large</label>
+                    <input type="radio" name="size" id="XL" value="XL">
+                    <br>
+                    <div>
+                        <button>Submit</button>
+                    </div>
+        </p>
+    </form>
+    <hr>
+    <h2>Validations Test</h2>
+    <form action="">
+        <p>
+            <label for="username">Enter a Username:</label>
+            <input id="username" type="text" placeholder="username" name="username" required>
+        </p>
+        <p>
+            <label for="password">Enter your Password:</label>
+            <input id ="password" type="password" placeholder="password" name="password" required>
+        </p>
+        <button>Submit</button>
+    </form>
+
 </body>
 </html>
